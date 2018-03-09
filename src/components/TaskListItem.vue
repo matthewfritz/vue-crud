@@ -1,7 +1,7 @@
 <template>
   <li>
     {{ title }}
-    <button type="button" class="close" aria-label="Close">
+    <button type="button" class="close" aria-label="Close" @click="$emit('removeEvent', id)">
       <span aria-hidden="true" class="text-danger">&times;</span>
     </button>
   </li>

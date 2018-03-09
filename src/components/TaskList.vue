@@ -8,10 +8,16 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<ol v-if="tasks.length">
-						<TaskListItem v-bind="task" v-for="task in tasks" :key="task.id"></TaskListItem>
+						<TaskListItem
+							v-bind="task"
+							v-for="task in tasks"
+							:key="task.id"
+							@removeEvent="removeTask"
+						>
+						</TaskListItem>
 					</ol>
 					<p class="text-center" v-else>
-						Start adding tasks by typing below...
+						Start adding tasks by typing below to help manage his rage...
 					</p>
 				</div>
 			</div>
@@ -57,6 +63,11 @@ export default {
 	  		// clear out the newTask data property
 	  		this.newTask = '';
   		}
+  	},
+  	removeTask: function(id) {
+  		this.tasks = this.tasks.filter(function(task) {
+  			return task.id != id;
+  		});
   	},
 	taskCount: function() {
 		return this.tasks.length;
