@@ -6,6 +6,15 @@
 
 		<form>
 			<div class="row">
+				<div class="col-sm-12 form-group">
+					<input type="text"
+						class="form-control"
+						placeholder="Type something and press Enter..."
+						autofocus
+					/>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-sm-12">
 					<ol>
 						<TaskListItem v-bind="task" v-for="task in tasks" :key="task.id"></TaskListItem>
@@ -24,6 +33,7 @@ export default {
   data () {
     return {
 		title: 'What Can Homer Do Instead?',
+		newTask: '',
 		tasks: [
 			{
 				id: 1,
