@@ -1,7 +1,11 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div id="app" class="col-sm-8 mt-5 text-center">
+        <img src="./assets/logo.png">
+        <router-view/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -10,14 +14,3 @@ export default {
   name: 'App'
 }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
