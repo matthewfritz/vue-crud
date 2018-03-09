@@ -17,7 +17,7 @@
 						</TaskListItem>
 					</ol>
 					<p class="text-center" v-else>
-						Start adding tasks by typing below to help manage his rage...
+						Start adding tasks below to help quell his rage...
 					</p>
 				</div>
 			</div>
