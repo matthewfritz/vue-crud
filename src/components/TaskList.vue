@@ -4,7 +4,7 @@
 			<h3>{{ title }}</h3>
 		</div>
 
-		<form>
+		
 			<div class="row">
 				<div class="col-sm-12">
 					<ol v-if="tasks.length">
@@ -32,7 +32,7 @@
 					/>
 				</div>
 			</div>
-		</form>
+		
 	</div>
 </template>
 
