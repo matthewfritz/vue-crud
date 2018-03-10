@@ -1,7 +1,7 @@
 {
-  "name": "vue-crud",
+  "name": "vue-tasks",
   "version": "1.0.0",
-  "description": "Basic CRUD operations in Vue",
+  "description": "Vue Tasks SPA",
   "author": "Matthew Fritz <mattf@burbankparanormal.com>",
   "private": true,
   "scripts": {
