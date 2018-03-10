@@ -10,14 +10,12 @@ export default new Router({
     {
       path: '/',
       name: 'TaskList',
-      component: TaskList,
-      props: {navItem: 'tasks'}
+      component: TaskList
     },
     {
       path: '/about',
       name: 'About',
-      component: About,
-      props: {navItem: 'about'}
+      component: About
     }
   ]
 })

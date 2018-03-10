@@ -13,7 +13,7 @@
 				<ul>
 					<li>Single File Components</li>
 					<li>Vue Router</li>
-					<li>Component-local data</li>
+					<li>Component-local data (destroyed upon component transition)</li>
 					<li>Keyboard Events</li>
 					<li>Keyboard Input</li>
 					<li>Bound Data Models</li>
@@ -42,3 +42,12 @@ export default {
   }
 }
 </script>
+
+<style>
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+</style>

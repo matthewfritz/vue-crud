@@ -35,7 +35,9 @@
 
     <div class="row justify-content-center">
       <div id="app" class="col-sm-8 mt-3">
-        <router-view/>
+        <transition name="fade" mode="out-in">
+          <router-view></router-view>
+        </transition>
       </div>
     </div>
   </div>
