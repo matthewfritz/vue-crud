@@ -13,6 +13,9 @@
               <li class="nav-item" v-bind:class="{ active: activeTasks() }">
                 <router-link to="/" class="nav-link">Tasks</router-link>
               </li>
+              <li class="nav-item" v-bind:class="{ active: activeAxios() }">
+                <router-link to="/axios" class="nav-link">Axios</router-link>
+              </li>
               <li class="nav-item" v-bind:class="{ active: activeAbout() }">
                 <router-link to="/about" class="nav-link">About</router-link>
               </li>
@@ -49,6 +52,9 @@ export default {
   methods: {
     activeTasks: function() {
       return this.$router.currentRoute.path == "/";
+    },
+    activeAxios: function() {
+      return this.$router.currentRoute.path == "/axios";
     },
     activeAbout: function() {
       return this.$router.currentRoute.path == "/about";
